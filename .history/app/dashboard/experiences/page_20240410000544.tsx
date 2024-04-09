@@ -31,41 +31,16 @@ export default function Page() {
             height={698}
             alt="Screenshots of fireside chat experience"
           />
-    <Image
+          <Image
             src="/fireside-reflection.png"
-            width={699}
+            width={756}
             height={691}
             alt="Screenshots of reflection on fireside chat"
           />
 
     <br/>
-    <p> 
-      I had the amazing opportunity to attend fireside chats with amazing entrepreneurs, not only through Women in Tech but also my module CP2201: Journey of an Innovator. 
-      Their life experiences and goals have motivated me to find something I'm as passionate about.
-    </p>
-    <br/>
-
-    <br/>
     <p className="text-[34px]"> Hackathons </p>
-    <br/>
-
-    <p className="text-[26px]"> Ninja Van CodeDojo 2023 </p>
-    <br/>
-
-    <Image
-            src="/codedojo-dashboard.jpeg"
-            width={1280}
-            height={729}
-            alt="Screenshots of codedojo dashboard"
-          />
-    
-    <br />
-    <p>
-      My team and I participated in the Ninja Van CodeDojo hackathon, where we were tasked to come up with a solution to improve their operations over 36 hours. 
-      Our team decided to focus on their newest venture into livestream sales, and designed an improved version of their web application and dashboard.
-    </p>
-
-    <br />
+     <br />
   </div>
   );
 }

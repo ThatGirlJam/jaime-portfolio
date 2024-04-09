@@ -53,13 +53,11 @@ export default function Page() {
     <br/>
 
     <Image
-            src="/codedojo-dashboard.jpeg"
-            width={1280}
-            height={729}
-            alt="Screenshots of codedojo dashboard"
+            src="/codedojo-dashboard.png"
+            width={699}
+            height={691}
+            alt="Screenshots of reflection on fireside chat"
           />
-    
-    <br />
     <p>
       My team and I participated in the Ninja Van CodeDojo hackathon, where we were tasked to come up with a solution to improve their operations over 36 hours. 
       Our team decided to focus on their newest venture into livestream sales, and designed an improved version of their web application and dashboard.

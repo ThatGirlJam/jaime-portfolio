@@ -11,13 +11,6 @@ export default function Page() {
     justifyContent: 'center', // Horizontally center the image
   };
 
-  const dashedLineStyle = {
-    width: '200px',
-    height: '2px',
-    border: '1px dashed black',
-    margin: '20px auto', // Center the dashed line horizontally
-  };
-
   return (
     <div className="text-center"> {/* Apply text-center class to center-align all content */}
       <p className="text-[44px]"> Hi there! </p>
@@ -44,30 +37,10 @@ export default function Page() {
           I have outlined some of my projects, experiences and skills on this website for your perusal. This website was built using Next.js too! 
         </p>
       </div>
-      <br/>
 
-      {/* Dashed line */}
-      <div style={dashedLineStyle}></div>
-
-      <p className="text-[30px]">
-        I would be happy to connect!
-      </p>
-
-      {/* Dashed line */}
-      <div style={dashedLineStyle}></div>
-
-      <br/>
       <p className="text-[20px]">
-        Feel free to contact me using any of the methods below. 
+        Would love to connect!
       </p>
-
-      <br/>
-
-      <ul>
-        <li>Github: <a href="https://github.com/ThatGirlJam" target="_blank" className="text-blue-500">link to my GitHub</a> </li>
-        <li>Email: <a href="mailto: jaimengjm@gmail.com" className="text-blue-500">jaimengjm@gmail.com</a> </li>
-        <li>LinkedIn: <a href="https://www.linkedin.com/in/jaime-ng-jm/" target="_blank" className="text-blue-500">link to my LinkedIn Page</a> </li>
-      </ul>
     </div>
   );
 }

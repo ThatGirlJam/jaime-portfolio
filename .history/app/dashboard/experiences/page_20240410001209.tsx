@@ -52,16 +52,8 @@ export default function Page() {
     <p className="text-[26px]"> Ninja Van CodeDojo 2023 </p>
     <br/>
 
-    <Image
-            src="/codedojo-dashboard.jpeg"
-            width={1280}
-            height={729}
-            alt="Screenshots of codedojo dashboard"
-          />
-    
-    <br />
     <p>
-      My team and I participated in the Ninja Van CodeDojo hackathon, where we were tasked to come up with a solution to improve their operations over 36 hours. 
+      My team and I participated in the Ninja Van CodeDojo hackathon, where we were tasked to come up with a solution to improve their operations. 
       Our team decided to focus on their newest venture into livestream sales, and designed an improved version of their web application and dashboard.
     </p>
 

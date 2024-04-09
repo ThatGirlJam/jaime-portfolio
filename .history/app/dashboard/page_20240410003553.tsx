@@ -46,28 +46,20 @@ export default function Page() {
       </div>
       <br/>
 
-      {/* Dashed line */}
-      <div style={dashedLineStyle}></div>
+      const dashedLineStyle = {
+    width: '200px',
+    height: '2px',
+    border: '1px dashed black',
+    margin: '20px auto', // Center the dashed line horizontally
+  };
 
       <p className="text-[30px]">
         I would be happy to connect!
       </p>
-
-      {/* Dashed line */}
-      <div style={dashedLineStyle}></div>
-
       <br/>
       <p className="text-[20px]">
         Feel free to contact me using any of the methods below. 
       </p>
-
-      <br/>
-
-      <ul>
-        <li>Github: <a href="https://github.com/ThatGirlJam" target="_blank" className="text-blue-500">link to my GitHub</a> </li>
-        <li>Email: <a href="mailto: jaimengjm@gmail.com" className="text-blue-500">jaimengjm@gmail.com</a> </li>
-        <li>LinkedIn: <a href="https://www.linkedin.com/in/jaime-ng-jm/" target="_blank" className="text-blue-500">link to my LinkedIn Page</a> </li>
-      </ul>
     </div>
   );
 }

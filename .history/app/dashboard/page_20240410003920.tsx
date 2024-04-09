@@ -66,7 +66,7 @@ export default function Page() {
       <ul>
         <li>Github: <a href="https://github.com/ThatGirlJam" target="_blank" className="text-blue-500">link to my GitHub</a> </li>
         <li>Email: <a href="mailto: jaimengjm@gmail.com" className="text-blue-500">jaimengjm@gmail.com</a> </li>
-        <li>LinkedIn: <a href="https://www.linkedin.com/in/jaime-ng-jm/" target="_blank" className="text-blue-500">link to my LinkedIn Page</a> </li>
+        <li>LinkedIn: </li>
       </ul>
     </div>
   );
