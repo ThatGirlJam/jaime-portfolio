@@ -17,10 +17,9 @@ export default function Page() {
             className={`${lusitana.className} text-xl text-gray-800 md:text-3xl md:leading-normal`}
           >
             <strong>Welcome to my portfolio website!</strong> I am{' '}
-            <Link href="https://www.linkedin.com/in/jaime-ng-jm">
+            <Link href="https://www.linkedin.com/in/jaime-ng-jm" passHref>
               <a
-                target="_blank"
-                rel="noopener noreferrer"
+                //target="_blank"
                 className="text-blue-500"
               >
                 Jaime Ng Jia Min

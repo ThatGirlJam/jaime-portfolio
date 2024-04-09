@@ -18,11 +18,7 @@ export default function Page() {
           >
             <strong>Welcome to my portfolio website!</strong> I am{' '}
             <Link href="https://www.linkedin.com/in/jaime-ng-jm">
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-500"
-              >
+              <a target="_blank" rel="noopener" className="text-blue-500">
                 Jaime Ng Jia Min
               </a>
             </Link>

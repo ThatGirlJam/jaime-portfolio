@@ -17,15 +17,13 @@ export default function Page() {
             className={`${lusitana.className} text-xl text-gray-800 md:text-3xl md:leading-normal`}
           >
             <strong>Welcome to my portfolio website!</strong> I am{' '}
-            <Link href="https://www.linkedin.com/in/jaime-ng-jm">
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-500"
-              >
-                Jaime Ng Jia Min
-              </a>
-            </Link>
+            <a
+              href="https://www.linkedin.com/in/jaime-ng-jm"
+              //target="_blank"
+              className="text-blue-500"
+            >
+              Jaime Ng Jia Min
+            </a>
             , brought to you by Vercel.
           </p>
           <Link
