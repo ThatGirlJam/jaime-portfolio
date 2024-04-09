@@ -1,17 +1,12 @@
 export default function Page() {
-    const technicalSkills = [
-        "Javascript", 
-        "React", 
-        "HTML", 
-        "CSS",
-    ];
+  const technicalSkills = ['Javascript', 'React', 'HTML', 'CSS'];
 
   return (
     <div>
       <p className="text-[44px]"> Skills and Courses Taken </p>
-      <br/>
+      <br />
       <p className="text-[34px]"> Skills (Technical) </p>
-      <br/>
+      <br />
 
       <ul>
         {/* Map over the technical skills array */}
@@ -21,9 +16,9 @@ export default function Page() {
       </ul>
 
       <p className="text-[34px]"> Skills (Non-Technical) </p>
-      <br/>
+      <br />
       <p className="text-[34px]"> Courses Taken </p>
-      <br/>
+      <br />
     </div>
   );
 }
