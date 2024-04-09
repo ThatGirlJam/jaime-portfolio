@@ -1,7 +1,5 @@
 import Video from 'next-video';
 import RoamioLanding from '@/videos/RoamioLanding.mp4';
-import RoamioDashboard from '@/videos/RoamioDashboard.mp4';
-import RoamioFull from '@/videos/RoamioFull.mp4';
 
 export default function Page() {
   return (
@@ -24,8 +22,6 @@ export default function Page() {
       <p>Videos: Landing page, Dashboard, Final Pitch Video</p>
       <br/>
       <Video src={RoamioLanding}/>
-      <Video src={RoamioDashboard}/>
-      <Video src={RoamioFull}/>
     </div>
   );
 }

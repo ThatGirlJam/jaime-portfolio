@@ -1,7 +1,5 @@
 import Video from 'next-video';
 import RoamioLanding from '@/videos/RoamioLanding.mp4';
-import RoamioDashboard from '@/videos/RoamioDashboard.mp4';
-import RoamioFull from '@/videos/RoamioFull.mp4';
 
 export default function Page() {
   return (
@@ -21,11 +19,8 @@ export default function Page() {
       Tech used: Next.js, Prisma, Planetscale, MySQL, Tailwind, Mantine UI
       </p>
       <br/>
-      <p>Videos: Landing page, Dashboard, Final Pitch Video</p>
-      <br/>
-      <Video src={RoamioLanding}/>
-      <Video src={RoamioDashboard}/>
-      <Video src={RoamioFull}/>
+      <p>Videos: Landing page, </p>
+      <Video src={RoamioLanding} className="w-100 h-100"/>
     </div>
   );
 }

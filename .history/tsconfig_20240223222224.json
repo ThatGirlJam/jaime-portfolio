@@ -23,14 +23,12 @@
     }
   },
   "include": [
-    "video.d.ts",
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
     "app/lib/placeholder-data.js",
-    "scripts/seed.js",
-    "video.d.ts"
+    "scripts/seed.js"
   ],
   "exclude": ["node_modules"]
 }
