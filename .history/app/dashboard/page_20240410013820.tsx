@@ -42,7 +42,7 @@ export default function Page() {
         {' '}
         {/* Apply mx-auto class to horizontally center the div */}
         <p className="text-[20px]">
-          I`m a Year 2 (going on Year 3) computer science student who enjoys the
+          I'm a Year 2 (going on Year 3) computer science student who enjoys the
           feeling of creating something with her own two hands.
         </p>
         <br />
