@@ -5,7 +5,7 @@ export default function Page() {
   return (
     <div>
       <p>Projects Page</p>
-      <Video src={RoamioLanding} className="w-100 h-100"/>
+      <Video src={RoamioLanding} className="w-100 h-100" />
     </div>
   );
 }

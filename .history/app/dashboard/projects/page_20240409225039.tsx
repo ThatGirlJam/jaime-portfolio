@@ -5,9 +5,9 @@ export default function Page() {
   return (
     <div>
       <p className="text-[44px]"> Web Development </p>
-      <br/>
+      <br />
       <p className="text-[44px]"> Web Development </p>
-      <Video src={RoamioLanding} className="w-100 h-100"/>
+      <Video src={RoamioLanding} className="w-100 h-100" />
     </div>
   );
 }
