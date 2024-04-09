@@ -23,16 +23,14 @@ export default function Page() {
       <p className="text-[44px]"> Hi there! </p>
       <br/>
 
-      <div className="bg-sky-100 py-7 backdrop-opacity-40">
-        <div style={divStyle}>
-          <Image
-            src="/jaime-linkedin-photo.jpeg"
-            width={350}
-            height={350}
-            style={imageStyle}
-            alt="Screenshots of jaime linkedin photo"
-          />
-        </div>
+      <div style={divStyle} className="bg-blue-200 h-50">
+        <Image
+          src="/jaime-linkedin-photo.jpeg"
+          width={350}
+          height={350}
+          style={imageStyle}
+          alt="Screenshots of jaime linkedin photo"
+        />
       </div>
       <br/>
 
