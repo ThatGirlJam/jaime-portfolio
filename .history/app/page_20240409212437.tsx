@@ -48,11 +48,10 @@ export default function Page() {
             alt="Screenshots of the dashboard project showing desktop version"
           />
           <Image
-            src="/hero-mobile-roamio.png"
-            width={557}
-            height={5730}
+            src="/hero-mobile.png"
+            width={560}
+            height={620}
             className="block md:hidden"
-            style={imageStyle}
             alt="Screenshots of the dashboard project showing mobile version"
           />
         </div>
