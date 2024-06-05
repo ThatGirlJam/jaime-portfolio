@@ -19,19 +19,19 @@ export default function Page() {
   };
 
   return (
-    <div className="text-center">
+    <div className="flex  min-h-screen flex-col items-center bg-gray-50 py-10 text-center">
       {' '}
       {/* Apply text-center class to center-align all content */}
       <p className="text-[44px]"> Hi there! </p>
       <br />
-      <div className="bg-sky-100 py-7 backdrop-opacity-40">
-        <div style={divStyle}>
+      <div className="w-full max-w-md rounded-lg bg-sky-100 py-7 shadow-lg">
+        <div className="flex justify-center">
           <Image
             src="/jaime-linkedin-photo.jpeg"
             width={350}
             height={350}
-            style={imageStyle}
-            alt="Screenshots of jaime linkedin photo"
+            className="rounded-lg border border-white shadow-md"
+            alt="Photo of Jaime"
           />
         </div>
       </div>

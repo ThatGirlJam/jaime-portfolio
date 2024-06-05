@@ -24,14 +24,14 @@ export default function Page() {
       {/* Apply text-center class to center-align all content */}
       <p className="text-[44px]"> Hi there! </p>
       <br />
-      <div className="bg-sky-100 py-7 backdrop-opacity-40">
-        <div style={divStyle}>
+      <div className="w-full max-w-md rounded-lg bg-sky-100 py-7 shadow-lg">
+        <div className="flex justify-center">
           <Image
             src="/jaime-linkedin-photo.jpeg"
             width={350}
             height={350}
-            style={imageStyle}
-            alt="Screenshots of jaime linkedin photo"
+            className="rounded-lg border border-white shadow-md"
+            alt="Photo of Jaime"
           />
         </div>
       </div>
@@ -42,14 +42,14 @@ export default function Page() {
         {' '}
         {/* Apply mx-auto class to horizontally center the div */}
         <p className="text-[20px]">
-          I'm a Year 2 (going on Year 3) computer science student who enjoys the
+          I`m a Year 2 (going on Year 3) computer science student who enjoys the
           feeling of creating something with her own two hands.
         </p>
         <br />
         <p className="text-[20px]">
           I have a keen interest in learning more about AI and Machine Learning,
           Software Development and Cyber Security. As I`m still exploring my
-          passions, I'm be eager to learn anything even if it is outside my
+          passions, I`m be eager to learn anything even if it is outside my
           comfort zone.
         </p>
         <br />
