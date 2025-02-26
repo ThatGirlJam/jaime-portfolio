@@ -3,6 +3,33 @@ import Image from 'next/image';
 export default function Page() {
   return (
     <div>
+      <p className="text-[44px]"> NUS Overseas Colleges: Silicon Valley </p>
+      <br />
+      <p className="text-[34px]"> NOC SV 2025 - A Year of Entrepreneurship and Adventures </p>
+      <br />
+      <p className="text-[26px]"> Interning at Workstream</p>
+      <br />
+      <p>
+        In the works!
+      </p>
+      <br />
+
+
+      <p className="text-[26px]"> Studying at Stanford University</p>
+      <br />
+      <p>
+        In the works!
+      </p>
+      <br />
+
+
+      <p className="text-[26px]"> Travelling and Exploring the World</p>
+      <br />
+      <p>
+        In the works!
+      </p>
+      <br />
+
       <p className="text-[44px]"> Co-curricular Activities </p>
       <br />
       <p className="text-[34px]"> Women in Tech @ NUS </p>

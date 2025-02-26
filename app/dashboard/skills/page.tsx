@@ -8,6 +8,7 @@ export default function Page() {
     'Python',
     'Next.js',
     'MySQL',
+    'PostgreSQL', 
     'Tailwind',
     'PyTorch',
     'Pandas',
@@ -41,6 +42,10 @@ export default function Page() {
     'CS2106: Introduction to Operating Systems',
     'CS2103T: Software Engineering',
     'DTK1234: Design Thinking',
+    'CP2201: Journey of the Innovator',
+    'CS2105: Introduction to Computer Networks', 
+    'CS3230: Design and Analysis of Algorithms', 
+    'CS3219: Software Engineering Principles and Patterns'
   ];
 
   return (

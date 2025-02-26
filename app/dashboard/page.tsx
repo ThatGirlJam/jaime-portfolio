@@ -27,7 +27,7 @@ export default function Page() {
       <div className="w-full max-w-md rounded-lg bg-sky-100 py-7 shadow-lg">
         <div className="flex justify-center">
           <Image
-            src="/jaime-linkedin-photo.jpeg"
+            src="/jaime-pic.jpg"
             width={350}
             height={350}
             className="rounded-lg border border-white shadow-md"
@@ -36,14 +36,14 @@ export default function Page() {
         </div>
       </div>
       <br />
-      <p className="text-[20px]"> My name is Jaime Ng Jia Min. </p>
+      <p className="text-[20px]"> My name is Jaime Ng. </p>
       <br />
       <div className="mx-auto max-w-2xl">
         {' '}
         {/* Apply mx-auto class to horizontally center the div */}
         <p className="text-[20px]">
-          I`m a Year 2 (going on Year 3) computer science student who enjoys the
-          feeling of creating something with her own two hands.
+          I`m a Year 3 computer science student currently based in SF Bay who enjoys the
+          feeling of creating something with her own two hands. 
         </p>
         <br />
         <p className="text-[20px]">
