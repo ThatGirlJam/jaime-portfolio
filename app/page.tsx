@@ -46,11 +46,11 @@ export default function Page() {
           </div>
           
           <h1 className={`${lusitana.className} text-5xl md:text-7xl font-bold text-platinum mb-6 animate-slide-up`}>
-            Hi, I'm <span className="text-pale-oak">Jaime Ng</span>
+            Hi, I&apos;m <span className="text-pale-oak">Jaime Ng</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-platinum/90 max-w-2xl mb-8 animate-slide-up animation-delay-200">
-            I'm a computer science student and a Software Developer. An expert at being a beginner, and eager to learn. 
+            I&apos;m a computer science student and a Software Developer. An expert at being a beginner, and eager to learn. 
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 animate-slide-up animation-delay-400">
@@ -114,7 +114,7 @@ export default function Page() {
       {/* Jobs Section */}
       <section className="py-20 px-6 bg-platinum">
         <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col md:flex-row items-center gap-12">
+          <div className="flex flex-col-reverse md:flex-row items-center gap-12">
             <div className="flex-1">
               <div className="rounded-2xl bg-platinum p-8 border border-grey/20">
                 <p className="text-grey mb-4">Current Role</p>
@@ -136,7 +136,7 @@ export default function Page() {
                 <li>AI research at A*STAR</li>
               </ul>
               <p className="text-xl text-grey mb-6">
-                I've gained valuable industry experience through these roles and can't wait to continue in learning the best (and avoiding the worst) software engineering practices. 
+                I&apos;ve gained valuable industry experience through these roles and can&apos;t wait to continue in learning the best (and avoiding the worst) software engineering practices. 
               </p>
               <Link
                 href="/dashboard/jobs"
@@ -207,10 +207,10 @@ export default function Page() {
                 Skills & Education
               </h2>
               <p className="text-xl text-grey mb-6">
-                Technical skills, languages, and courses I've taken throughout my computer science journey.
+                Technical skills, languages, and courses I&apos;ve taken throughout my computer science journey.
               </p>
               <p className="text-xl text-grey mb-6">
-                (WIP) Follow me as a I collate the best learning resources to get up to speed in an ever-changing industry.
+                (WIP) Follow me as I collate the best learning resources to get up to speed in an ever-changing industry.
               </p>
               <Link
                 href="/dashboard/skills"
@@ -243,7 +243,7 @@ export default function Page() {
             About Me
           </h2>
           <p className="text-xl text-grey mb-8 leading-relaxed">
-            I'm a Year 4 computer science student currently based in Singapore (previously SF Bay) who enjoys creating something with my own two hands. 
+            I&apos;m a Year 4 computer science student currently based in Singapore (previously SF Bay) who enjoys creating something with my own two hands. 
             I have a keen interest in learning more about Software Development and how AI / Machine Learning can play a part in that.
           </p>
           <Link
@@ -262,7 +262,7 @@ export default function Page() {
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
               <p className={`${lusitana.className} text-2xl font-bold mb-2`}>Ideate, Innovate, Iterate.</p>
-              <p className="text-platinum/80">Let's connect and build something amazing together</p>
+              <p className="text-platinum/80">Let&apos;s connect and build something amazing together</p>
             </div>
             <div className="flex gap-6">
               <a

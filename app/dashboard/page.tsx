@@ -1,102 +1,93 @@
 import Image from 'next/image';
+import { lusitana } from '@/app/ui/fonts';
 
 export default function Page() {
-  const imageStyle = {
-    borderRadius: '5%',
-    border: '1px solid #fff',
-  };
-
-  const divStyle = {
-    display: 'flex',
-    justifyContent: 'center', // Horizontally center the image
-  };
-
-  const dashedLineStyle = {
-    width: '200px',
-    height: '2px',
-    border: '1px dashed black',
-    margin: '20px auto', // Center the dashed line horizontally
-  };
-
   return (
-    <div className="flex  min-h-screen flex-col items-center bg-gray-50 py-10 text-center">
-      {' '}
-      {/* Apply text-center class to center-align all content */}
-      <p className="text-[44px]"> Hi there! </p>
-      <br />
-      <div className="w-full max-w-md rounded-lg bg-sky-100 py-7 shadow-lg">
-        <div className="flex justify-center">
-          <Image
-            src="/jaime-pic.jpg"
-            width={350}
-            height={350}
-            className="rounded-lg border border-white shadow-md"
-            alt="Photo of Jaime"
-          />
+    <div className="flex min-h-screen flex-col items-center py-10 px-6">
+      <div className="max-w-4xl w-full">
+        <h1 className={`${lusitana.className} text-5xl md:text-6xl font-bold text-pitch-black mb-8 text-center`}>
+          Hi there!
+        </h1>
+        
+        <div className="w-full max-w-md mx-auto mb-8">
+          <div className="rounded-2xl bg-platinum p-6 border border-grey/20 shadow-sm">
+            <div className="flex justify-center">
+              <Image
+                src="/jaime-pic.jpg"
+                width={350}
+                height={350}
+                className="rounded-xl border border-grey/20 shadow-md"
+                alt="Photo of Jaime"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div className="text-center mb-8">
+          <p className="text-2xl md:text-3xl font-semibold text-pitch-black mb-6">
+            My name is Jaime Ng.
+          </p>
+        </div>
+
+        <div className="mx-auto max-w-2xl space-y-6 mb-12">
+          <p className="text-lg md:text-xl text-grey leading-relaxed">
+            I'm a Year 4 computer science student currently based in Singapore (previously SF Bay) who enjoys creating something with my own two hands.
+          </p>
+          <p className="text-lg md:text-xl text-grey leading-relaxed">
+            I have a keen interest in learning more about Software Development and how AI / Machine Learning can play a part in that. As I'm still exploring my passions, I'm eager to learn anything even if it is outside my comfort zone.
+          </p>
+          <p className="text-lg md:text-xl text-grey leading-relaxed">
+            I have outlined some of my projects, experiences and skills on this website for your perusal. This website was built using Next.js too!
+          </p>
+        </div>
+
+        <div className="border-t border-grey/30 my-12"></div>
+        
+        <div className="text-center mb-8">
+          <h2 className={`${lusitana.className} text-3xl md:text-4xl font-bold text-pitch-black mb-6`}>
+            I would be happy to connect!
+          </h2>
+          <p className="text-lg md:text-xl text-grey mb-6">
+            Feel free to contact me using any of the methods below.
+          </p>
+        </div>
+
+        <div className="max-w-md mx-auto">
+          <ul className="space-y-4 text-lg text-grey">
+            <li className="flex items-center justify-center gap-2">
+              <span className="font-medium text-pitch-black">Github:</span>
+              <a
+                href="https://github.com/ThatGirlJam"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-grey hover:text-pitch-black transition-colors underline"
+              >
+                ThatGirlJam
+              </a>
+            </li>
+            <li className="flex items-center justify-center gap-2">
+              <span className="font-medium text-pitch-black">Email:</span>
+              <a 
+                href="mailto:jaimengjm@gmail.com" 
+                className="text-grey hover:text-pitch-black transition-colors underline"
+              >
+                jaimengjm@gmail.com
+              </a>
+            </li>
+            <li className="flex items-center justify-center gap-2">
+              <span className="font-medium text-pitch-black">LinkedIn:</span>
+              <a
+                href="https://www.linkedin.com/in/jaime-ng-jm/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-grey hover:text-pitch-black transition-colors underline"
+              >
+                jaime-ng-jm
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-      <br />
-      <p className="text-[20px]"> My name is Jaime Ng. </p>
-      <br />
-      <div className="mx-auto max-w-2xl">
-        {' '}
-        {/* Apply mx-auto class to horizontally center the div */}
-        <p className="text-[20px]">
-          I`m a Year 3 computer science student currently based in SF Bay who enjoys the
-          feeling of creating something with her own two hands. 
-        </p>
-        <br />
-        <p className="text-[20px]">
-          I have a keen interest in learning more about AI and Machine Learning,
-          Software Development and Cyber Security. As I`m still exploring my
-          passions, I`m be eager to learn anything even if it is outside my
-          comfort zone.
-        </p>
-        <br />
-        <p className="text-[20px]">
-          I have outlined some of my projects, experiences and skills on this
-          website for your perusal. This website was built using Next.js too!
-        </p>
-      </div>
-      <br />
-      {/* Dashed line */}
-      <div style={dashedLineStyle}></div>
-      <p className="text-[30px]">I would be happy to connect!</p>
-      {/* Dashed line */}
-      <div style={dashedLineStyle}></div>
-      <br />
-      <p className="text-[20px]">
-        Feel free to contact me using any of the methods below.
-      </p>
-      <br />
-      <ul>
-        <li>
-          Github:{' '}
-          <a
-            href="https://github.com/ThatGirlJam"
-            target="_blank"
-            className="text-blue-500"
-          >
-            link to my GitHub
-          </a>{' '}
-        </li>
-        <li>
-          Email:{' '}
-          <a href="mailto: jaimengjm@gmail.com" className="text-blue-500">
-            jaimengjm@gmail.com
-          </a>{' '}
-        </li>
-        <li>
-          LinkedIn:{' '}
-          <a
-            href="https://www.linkedin.com/in/jaime-ng-jm/"
-            target="_blank"
-            className="text-blue-500"
-          >
-            link to my LinkedIn Page
-          </a>{' '}
-        </li>
-      </ul>
     </div>
   );
 }
