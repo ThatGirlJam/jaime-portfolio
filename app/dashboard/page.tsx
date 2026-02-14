@@ -12,10 +12,10 @@ import {
 import { lusitana } from '@/app/ui/fonts';
 
 const quickLinks = [
-  { name: 'Projects', href: '/dashboard/projects', icon: DocumentDuplicateIcon, description: 'What I\'ve built' },
-  { name: 'Experiences', href: '/dashboard/experiences', icon: UserGroupIcon, description: 'Where I\'ve been' },
-  { name: 'Skills', href: '/dashboard/skills', icon: AcademicCapIcon, description: 'What I work with' },
+  { name: 'Projects', href: '/dashboard/projects', icon: DocumentDuplicateIcon, description: "What I've built" },
   { name: 'Jobs', href: '/dashboard/jobs', icon: BriefcaseIcon, description: 'Opportunities' },
+  { name: 'Experiences', href: '/dashboard/experiences', icon: UserGroupIcon, description: "Where I've been" },
+  { name: 'Skills', href: '/dashboard/skills', icon: AcademicCapIcon, description: 'What I work with' },
 ];
 
 const contactLinks = [

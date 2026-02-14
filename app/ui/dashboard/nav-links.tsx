@@ -16,14 +16,14 @@ import clsx from 'clsx';
 const links = [
   { name: 'Home', href: '/dashboard', icon: HomeIcon },
   {
-    name: 'Jobs',
-    href: '/dashboard/jobs',
-    icon: BriefcaseIcon,
-  },
-  {
     name: 'Projects',
     href: '/dashboard/projects',
     icon: DocumentDuplicateIcon,
+  },
+  {
+    name: 'Jobs',
+    href: '/dashboard/jobs',
+    icon: BriefcaseIcon,
   },
   { name: 'Experiences', href: '/dashboard/experiences', icon: UserGroupIcon },
   { name: 'Skills', href: '/dashboard/skills', icon: AcademicCapIcon },
