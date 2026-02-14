@@ -61,7 +61,7 @@ export default function Page() {
           Skills & Education
         </h1>
         <p className="text-xl text-grey mb-4">
-          Technical skills, languages, and courses I've taken throughout my computer science journey.
+          Technical skills, languages, and courses I&apos;ve taken throughout my computer science journey.
         </p>
         <p className="text-lg text-grey italic">
           (WIP) Follow me as I collate the best learning resources to get up to speed in an ever-changing industry.

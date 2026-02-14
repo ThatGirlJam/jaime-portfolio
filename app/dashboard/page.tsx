@@ -31,10 +31,10 @@ export default function Page() {
 
         <div className="mx-auto max-w-2xl space-y-6 mb-12">
           <p className="text-lg md:text-xl text-grey leading-relaxed">
-            I'm a Year 4 computer science student currently based in Singapore (previously SF Bay) who enjoys creating something with my own two hands.
+            I&apos;m a Year 4 computer science student currently based in Singapore (previously SF Bay) who enjoys creating something with my own two hands.
           </p>
           <p className="text-lg md:text-xl text-grey leading-relaxed">
-            I have a keen interest in learning more about Software Development and how AI / Machine Learning can play a part in that. As I'm still exploring my passions, I'm eager to learn anything even if it is outside my comfort zone.
+            I have a keen interest in learning more about Software Development and how AI / Machine Learning can play a part in that. As I&apos;m still exploring my passions, I&apos;m eager to learn anything even if it is outside my comfort zone.
           </p>
           <p className="text-lg md:text-xl text-grey leading-relaxed">
             I have outlined some of my projects, experiences and skills on this website for your perusal. This website was built using Next.js too!

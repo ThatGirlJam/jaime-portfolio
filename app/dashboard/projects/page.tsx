@@ -25,7 +25,7 @@ export default function Page() {
           Projects
         </h1>
         <p className="text-xl text-grey">
-          Explore my web development projects and the technologies I've worked with.
+          Explore my web development projects and the technologies I&apos;ve worked with.
         </p>
       </div>
 

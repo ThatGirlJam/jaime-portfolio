@@ -50,7 +50,7 @@ export default function Page() {
           Jobs & Internships
         </h1>
         <p className="text-xl text-grey">
-          My professional journey and the valuable industry experience I've gained along the way.
+          My professional journey and the valuable industry experience I&apos;ve gained along the way.
         </p>
       </div>
 
