@@ -1,93 +1,158 @@
 import Image from 'next/image';
+import Link from 'next/link';
+import {
+  EnvelopeIcon,
+  CommandLineIcon,
+  BriefcaseIcon,
+  DocumentDuplicateIcon,
+  UserGroupIcon,
+  AcademicCapIcon,
+  ArrowTopRightOnSquareIcon,
+} from '@heroicons/react/24/outline';
 import { lusitana } from '@/app/ui/fonts';
+
+const quickLinks = [
+  { name: 'Projects', href: '/dashboard/projects', icon: DocumentDuplicateIcon, description: 'What I\'ve built' },
+  { name: 'Experiences', href: '/dashboard/experiences', icon: UserGroupIcon, description: 'Where I\'ve been' },
+  { name: 'Skills', href: '/dashboard/skills', icon: AcademicCapIcon, description: 'What I work with' },
+  { name: 'Jobs', href: '/dashboard/jobs', icon: BriefcaseIcon, description: 'Opportunities' },
+];
+
+const contactLinks = [
+  {
+    label: 'GitHub',
+    href: 'https://github.com/ThatGirlJam',
+    handle: 'ThatGirlJam',
+    icon: CommandLineIcon,
+  },
+  {
+    label: 'Email',
+    href: 'mailto:jaimengjm@gmail.com',
+    handle: 'jaimengjm@gmail.com',
+    icon: EnvelopeIcon,
+  },
+  {
+    label: 'LinkedIn',
+    href: 'https://www.linkedin.com/in/jaime-ng-jm/',
+    handle: 'jaime-ng-jm',
+    icon: ArrowTopRightOnSquareIcon,
+  },
+];
 
 export default function Page() {
   return (
-    <div className="flex min-h-screen flex-col items-center py-10 px-6">
-      <div className="max-w-4xl w-full">
-        <h1 className={`${lusitana.className} text-5xl md:text-6xl font-bold text-pitch-black mb-8 text-center`}>
-          Hi there!
-        </h1>
-        
-        <div className="w-full max-w-md mx-auto mb-8">
-          <div className="rounded-2xl bg-platinum p-6 border border-grey/20 shadow-sm">
-            <div className="flex justify-center">
+    <div className="min-h-full">
+      {/* Hero strip */}
+      <section className="relative overflow-hidden rounded-2xl bg-graphite text-platinum px-6 py-10 md:py-14 mb-10 animate-fade-in">
+        <div className="absolute inset-0 bg-gradient-to-br from-pale-oak/10 to-transparent" aria-hidden />
+        <div className="relative z-10 max-w-4xl">
+          <span className="inline-block rounded-full bg-pale-oak/20 border border-pale-oak/30 px-4 py-1.5 text-sm font-medium text-pale-oak mb-6">
+            Welcome to my portfolio
+          </span>
+          <h1 className={`${lusitana.className} text-4xl md:text-5xl lg:text-6xl font-bold text-platinum mb-3`}>
+            Hi, I&apos;m Jaime
+          </h1>
+          <p className="text-lg md:text-xl text-platinum/90 max-w-2xl">
+            Year 4 computer science student · Singapore (previously SF Bay) · I like building things with my own two hands.
+          </p>
+        </div>
+      </section>
+
+      {/* Intro: photo + bio */}
+      <section className="grid grid-cols-1 lg:grid-cols-5 gap-10 lg:gap-14 mb-16 animate-slide-up">
+        <div className="lg:col-span-2 flex justify-center lg:justify-end">
+          <div className="relative w-full max-w-sm">
+            <div className="absolute -inset-1 rounded-2xl bg-pale-oak/20 blur-lg" aria-hidden />
+            <div className="relative rounded-2xl overflow-hidden border border-grey/20 shadow-lg bg-platinum p-2">
               <Image
                 src="/jaime-pic.jpg"
-                width={350}
-                height={350}
-                className="rounded-xl border border-grey/20 shadow-md"
+                width={400}
+                height={400}
+                className="rounded-xl w-full aspect-square object-cover"
                 alt="Photo of Jaime"
+                priority
               />
             </div>
           </div>
         </div>
-
-        <div className="text-center mb-8">
-          <p className="text-2xl md:text-3xl font-semibold text-pitch-black mb-6">
-            My name is Jaime Ng.
-          </p>
-        </div>
-
-        <div className="mx-auto max-w-2xl space-y-6 mb-12">
-          <p className="text-lg md:text-xl text-grey leading-relaxed">
-            I&apos;m a Year 4 computer science student currently based in Singapore (previously SF Bay) who enjoys creating something with my own two hands.
-          </p>
-          <p className="text-lg md:text-xl text-grey leading-relaxed">
-            I have a keen interest in learning more about Software Development and how AI / Machine Learning can play a part in that. As I&apos;m still exploring my passions, I&apos;m eager to learn anything even if it is outside my comfort zone.
-          </p>
-          <p className="text-lg md:text-xl text-grey leading-relaxed">
-            I have outlined some of my projects, experiences and skills on this website for your perusal. This website was built using Next.js too!
-          </p>
-        </div>
-
-        <div className="border-t border-grey/30 my-12"></div>
-        
-        <div className="text-center mb-8">
-          <h2 className={`${lusitana.className} text-3xl md:text-4xl font-bold text-pitch-black mb-6`}>
-            I would be happy to connect!
+        <div className="lg:col-span-3 flex flex-col justify-center space-y-6">
+          <h2 className={`${lusitana.className} text-2xl md:text-3xl font-bold text-pitch-black`}>
+            A bit about me
           </h2>
-          <p className="text-lg md:text-xl text-grey mb-6">
-            Feel free to contact me using any of the methods below.
-          </p>
+          <div className="space-y-4 text-grey leading-relaxed text-base md:text-lg">
+            <p>
+              I have a keen interest in Software Development and how AI / Machine Learning can support it. I&apos;m still exploring my passions and eager to learn — even when it takes me outside my comfort zone.
+            </p>
+            <p>
+              Currently, I'm exploring the world of Web SDKs, Identity Management and UX for Third-party Developers. 
+            </p>
+            <p>
+              I&apos;ve outlined my projects, experiences, and skills on this site for you to explore. (P.S. This site is built with Next.js.)
+            </p>
+          </div>
         </div>
+      </section>
 
-        <div className="max-w-md mx-auto">
-          <ul className="space-y-4 text-lg text-grey">
-            <li className="flex items-center justify-center gap-2">
-              <span className="font-medium text-pitch-black">Github:</span>
-              <a
-                href="https://github.com/ThatGirlJam"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-grey hover:text-pitch-black transition-colors underline"
+      {/* Quick links to dashboard sections */}
+      <section className="mb-16">
+        <h2 className={`${lusitana.className} text-2xl md:text-3xl font-bold text-pitch-black mb-6`}>
+          Explore
+        </h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          {quickLinks.map((item) => {
+            const Icon = item.icon;
+            return (
+              <Link
+                key={item.name}
+                href={item.href}
+                className="group flex items-start gap-4 rounded-xl border border-grey/20 bg-white p-5 shadow-sm transition-all hover:border-pale-oak/50 hover:shadow-md hover:bg-platinum/50"
               >
-                ThatGirlJam
-              </a>
-            </li>
-            <li className="flex items-center justify-center gap-2">
-              <span className="font-medium text-pitch-black">Email:</span>
-              <a 
-                href="mailto:jaimengjm@gmail.com" 
-                className="text-grey hover:text-pitch-black transition-colors underline"
-              >
-                jaimengjm@gmail.com
-              </a>
-            </li>
-            <li className="flex items-center justify-center gap-2">
-              <span className="font-medium text-pitch-black">LinkedIn:</span>
-              <a
-                href="https://www.linkedin.com/in/jaime-ng-jm/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-grey hover:text-pitch-black transition-colors underline"
-              >
-                jaime-ng-jm
-              </a>
-            </li>
-          </ul>
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-pale-oak/20 text-graphite group-hover:bg-pale-oak/30 transition-colors">
+                  <Icon className="h-5 w-5" />
+                </span>
+                <div className="min-w-0">
+                  <span className="font-semibold text-pitch-black group-hover:text-graphite block">
+                    {item.name}
+                  </span>
+                  <span className="text-sm text-grey">{item.description}</span>
+                </div>
+              </Link>
+            );
+          })}
         </div>
-      </div>
+      </section>
+
+      {/* Contact */}
+      <section className="rounded-2xl border border-grey/20 bg-platinum/50 p-6 md:p-8 animate-fade-in">
+        <h2 className={`${lusitana.className} text-2xl md:text-3xl font-bold text-pitch-black mb-2`}>
+          Let&apos;s connect!
+        </h2>
+        <p className="text-grey mb-6">
+          Reach out via any of the channels below.
+        </p>
+        <div className="flex flex-wrap gap-4">
+          {contactLinks.map((item) => {
+            const Icon = item.icon;
+            return (
+              <a
+                key={item.label}
+                href={item.href}
+                target={item.href.startsWith('http') || item.href.startsWith('mailto') ? '_blank' : undefined}
+                rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+                className="inline-flex items-center gap-3 rounded-xl border border-grey/20 bg-white px-5 py-4 shadow-sm transition-all hover:border-pale-oak/50 hover:shadow-md hover:bg-white"
+              >
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-pale-oak/20 text-graphite">
+                  <Icon className="h-5 w-5" />
+                </span>
+                <div className="text-left">
+                  <span className="block text-sm font-medium text-grey">{item.label}</span>
+                  <span className="font-semibold text-pitch-black">{item.handle}</span>
+                </div>
+              </a>
+            );
+          })}
+        </div>
+      </section>
     </div>
   );
 }
