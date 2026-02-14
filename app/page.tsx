@@ -21,14 +21,16 @@ export default function Page() {
         className="hidden md:block object-contain w-full h-auto max-h-[500px]"
         style={imageStyle}
         alt="Screenshots of the dashboard project showing desktop version"
+        priority
       />
       <Image
         src="/hero-mobile-roamio.png"
         width={557}
-        height={5730}
+        height={573}
         className="block md:hidden object-contain w-full h-auto max-h-[400px]"
         style={imageStyle}
         alt="Screenshots of the dashboard project showing mobile version"
+        priority
       />
     </div>,
   ];
