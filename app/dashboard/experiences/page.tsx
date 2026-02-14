@@ -100,7 +100,7 @@ export default function Page() {
             <p className="text-lg text-grey leading-relaxed">
               I had the amazing opportunity to attend fireside chats with amazing entrepreneurs, not only
               through Women in Tech but also my module CP2201: Journey of an Innovator. Their life
-              experiences and goals have motivated me to find something I&apos;m as passionate about.
+              experiences and goals have motivated me to find something {`I'm`} as passionate about.
             </p>
           </div>
         </div>

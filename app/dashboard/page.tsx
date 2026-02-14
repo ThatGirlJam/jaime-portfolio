@@ -84,7 +84,7 @@ export default function Page() {
               I have a keen interest in Software Development and how AI / Machine Learning can support it. I&apos;m still exploring my passions and eager to learn — even when it takes me outside my comfort zone.
             </p>
             <p>
-              Currently, I'm exploring the world of Web SDKs, Identity Management and UX for Third-party Developers. 
+              Currently, I&apos;m exploring the world of Web SDKs, Identity Management and UX for Third-party Developers. 
             </p>
             <p>
               I&apos;ve outlined my projects, experiences, and skills on this site for you to explore. (P.S. This site is built with Next.js.)
