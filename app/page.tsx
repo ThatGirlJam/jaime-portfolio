@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { lusitana } from '@/app/ui/fonts';
 import Image from 'next/image';
 import Carousel from '@/app/ui/carousel';
+import AnnouncementCarousel from '@/app/ui/announcement-carousel';
 
 export default function Page() {
   const imageStyle = {
@@ -79,6 +80,13 @@ export default function Page() {
           <div className="w-6 h-10 rounded-full border-2 border-pale-oak/50 flex items-start justify-center p-2">
             <div className="w-1.5 h-3 rounded-full bg-pale-oak/50"></div>
           </div>
+        </div>
+      </section>
+
+      {/* Announcements */}
+      <section className="py-16 px-6 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <AnnouncementCarousel interval={6000} />
         </div>
       </section>
 

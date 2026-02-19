@@ -7,6 +7,7 @@ import {
   AcademicCapIcon,
   BriefcaseIcon,
   LightBulbIcon,
+  ChatBubbleLeftRightIcon,
 } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -29,6 +30,7 @@ const links = [
   { name: 'Experiences', href: '/dashboard/experiences', icon: UserGroupIcon },
   { name: 'Skills', href: '/dashboard/skills', icon: AcademicCapIcon },
   { name: 'AYNTK', href: '/dashboard/ayntk', icon: LightBulbIcon },
+  { name: 'Feedback', href: '/dashboard/feedback', icon: ChatBubbleLeftRightIcon },
 ];
 
 export default function NavLinks() {
