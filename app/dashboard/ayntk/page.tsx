@@ -6,9 +6,7 @@ import {
   CircleStackIcon,
   ClipboardDocumentListIcon,
   BriefcaseIcon,
-  ChevronRightIcon,
 } from '@heroicons/react/24/outline';
-import Link from 'next/link';
 import { lusitana } from '@/app/ui/fonts';
 
 const sections = [
@@ -61,34 +59,33 @@ export default function Page() {
           All You Need To Know (AYNTK)
         </h1>
         <p className="text-xl text-grey">
-          Sections to help you get started as a software engineer. Pick a topic below.
+          Sections to help you get started as a software engineer. Topics are being curated and will be available soon.
         </p>
       </div>
 
-      {/* Two columns of cards */}
+      {/* Two columns of cards - disabled / in progress */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         {sections.map((section) => {
           const Icon = section.icon;
           return (
-            <Link
+            <div
               key={section.href}
-              href={section.href}
-              className="group flex flex-col rounded-2xl bg-platinum border border-grey/20 p-6 sm:p-8 hover:border-grey/40 hover:shadow-lg transition-all focus:outline-none focus:ring-2 focus:ring-pale-oak/50 focus:ring-offset-2"
+              className="flex flex-col rounded-2xl bg-platinum/60 border border-grey/30 p-6 sm:p-8 cursor-not-allowed select-none opacity-90"
+              aria-disabled="true"
             >
-              <div className="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-graphite text-platinum mb-5">
+              <div className="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-graphite/70 text-platinum/80 mb-5">
                 <Icon className="h-7 w-7" />
               </div>
-              <h2 className={`${lusitana.className} text-xl md:text-2xl font-bold text-pitch-black mb-2 group-hover:text-graphite`}>
+              <h2 className={`${lusitana.className} text-xl md:text-2xl font-bold text-pitch-black/80 mb-2`}>
                 {section.title}
               </h2>
-              <p className="text-grey text-sm md:text-base mb-4">
+              <p className="text-grey/90 text-sm md:text-base mb-4">
                 {section.description}
               </p>
-              <span className="inline-flex items-center gap-1 text-pale-oak font-medium text-sm mt-auto group-hover:gap-2 transition-all">
-                Read more
-                <ChevronRightIcon className="h-4 w-4" />
+              <span className="inline-flex items-center gap-1 text-grey/70 font-medium text-sm mt-auto">
+                Coming soon
               </span>
-            </Link>
+            </div>
           );
         })}
       </div>
