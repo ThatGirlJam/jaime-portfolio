@@ -1,5 +1,54 @@
-import { LightBulbIcon } from '@heroicons/react/24/outline';
+import {
+  LightBulbIcon,
+  CpuChipIcon,
+  ComputerDesktopIcon,
+  CodeBracketSquareIcon,
+  CircleStackIcon,
+  ClipboardDocumentListIcon,
+  BriefcaseIcon,
+  ChevronRightIcon,
+} from '@heroicons/react/24/outline';
+import Link from 'next/link';
 import { lusitana } from '@/app/ui/fonts';
+
+const sections = [
+  {
+    title: 'All About the Computer',
+    href: '/dashboard/ayntk/computer',
+    icon: CpuChipIcon,
+    description: 'What a computer is, how it works, and why it matters.',
+  },
+  {
+    title: 'All About Software',
+    href: '/dashboard/ayntk/software',
+    icon: CodeBracketSquareIcon,
+    description: 'Software types, lifecycle, and building for the real world.',
+  },
+  {
+    title: 'Hardware & OS',
+    href: '/dashboard/ayntk/hardware-os',
+    icon: ComputerDesktopIcon,
+    description: 'Hardware basics, operating systems, and how they interact.',
+  },
+  {
+    title: 'Data Structures & Algorithms',
+    href: '/dashboard/ayntk/data-structures-algorithms',
+    icon: CircleStackIcon,
+    description: 'Core DSA concepts and when to use them.',
+  },
+  {
+    title: 'Leetcode & Interviews',
+    href: '/dashboard/ayntk/leetcode-interviews',
+    icon: ClipboardDocumentListIcon,
+    description: 'Preparing for technical interviews and coding assessments.',
+  },
+  {
+    title: 'Software Engineer Roles',
+    href: '/dashboard/ayntk/roles',
+    icon: BriefcaseIcon,
+    description: 'Different roles, levels, and what each entails.',
+  },
+];
 
 export default function Page() {
   return (
@@ -12,41 +61,37 @@ export default function Page() {
           All You Need To Know (AYNTK)
         </h1>
         <p className="text-xl text-grey">
-          Features, projects, and important things to know when starting a career as a software engineer.
+          Sections to help you get started as a software engineer. Pick a topic below.
         </p>
       </div>
 
-      {/* Features */}
-      <section className="mb-12">
-        <h2 className={`${lusitana.className} text-3xl md:text-4xl font-bold text-pitch-black mb-6`}>
-          Features
-        </h2>
-        <div className="rounded-2xl bg-platinum border border-grey/20 p-8">
-          <p className="text-grey">Add features and key highlights here.</p>
-        </div>
-      </section>
-
-      {/* Projects */}
-      <section className="mb-12">
-        <h2 className={`${lusitana.className} text-3xl md:text-4xl font-bold text-pitch-black mb-6`}>
-          Projects
-        </h2>
-        <div className="rounded-2xl bg-platinum border border-grey/20 p-8">
-          <p className="text-grey">Add projects that matter for early-career software engineers here.</p>
-        </div>
-      </section>
-
-      {/* Career essentials */}
-      <section className="mb-12">
-        <h2 className={`${lusitana.className} text-3xl md:text-4xl font-bold text-pitch-black mb-6`}>
-          Important Things To Know
-        </h2>
-        <div className="space-y-4">
-          <div className="rounded-2xl bg-platinum border border-grey/20 p-8">
-            <p className="text-grey">Add tips, resources, and important things to know when starting out as a software engineer.</p>
-          </div>
-        </div>
-      </section>
+      {/* Two columns of cards */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        {sections.map((section) => {
+          const Icon = section.icon;
+          return (
+            <Link
+              key={section.href}
+              href={section.href}
+              className="group flex flex-col rounded-2xl bg-platinum border border-grey/20 p-6 sm:p-8 hover:border-grey/40 hover:shadow-lg transition-all focus:outline-none focus:ring-2 focus:ring-pale-oak/50 focus:ring-offset-2"
+            >
+              <div className="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-graphite text-platinum mb-5">
+                <Icon className="h-7 w-7" />
+              </div>
+              <h2 className={`${lusitana.className} text-xl md:text-2xl font-bold text-pitch-black mb-2 group-hover:text-graphite`}>
+                {section.title}
+              </h2>
+              <p className="text-grey text-sm md:text-base mb-4">
+                {section.description}
+              </p>
+              <span className="inline-flex items-center gap-1 text-pale-oak font-medium text-sm mt-auto group-hover:gap-2 transition-all">
+                Read more
+                <ChevronRightIcon className="h-4 w-4" />
+              </span>
+            </Link>
+          );
+        })}
+      </div>
     </div>
   );
 }
