@@ -9,8 +9,8 @@ export default function Page() {
       period: 'Jan 2026 - Present',
       description: 'Design and make software for architecture, construction and animation. Identity Web SDK Team.',
       details: [
-        'Working on Identity Web SDK Team',
-        'Design and make software for architecture, construction and animation',
+        'Working with Identity Web SDK Team to improve developer experience',
+        'Documentation, user experience and product development',
       ],
     },
     {
@@ -19,10 +19,12 @@ export default function Page() {
       period: 'Jan - Dec 2025',
       description: 'SF Bay based startup specializing in HR management software for hourly-wage workers.',
       details: [
-        'Frontend Web App development (React, Custom Components)',
-        'Backend Web App Development (NestJs, Jest, Prisma, PostgreSQL)',
-        'CI/CD practices (GitHub Actions)',
-        'Software Development Cycle, fast prototyping and product development',
+        'Backend services in NestJS: REST API endpoints for automated shift suggestions, time-off pay compliance and PDF shift schedules (JavaScript libraries for data processing and document handling)',
+        'APIs for Retool dashboards for time-off management',
+        'Event-driven architecture with listeners, background jobs and queue processing for real-time open-shift notifications',
+        'Jest unit tests across critical services for test coverage and reliability',
+        'Root cause analysis and debugging with Sentry, Postico and Chrome DevTools for production stability',
+        'React frontend and Flutter mobile features for time-off requests and shift scheduling; collaborated with designers on policy forms, list views and UI flows (TypeScript, React, Tailwind)',
       ],
     },
     {
@@ -31,11 +33,11 @@ export default function Page() {
       period: 'May - August 2024',
       description: 'Institute of High Performance Computing - LLM-related research and evaluation.',
       details: [
-        'Data collection, pre-processing and literature surveys on LLM applications',
-        'Set up evaluation of Generative AI results on accuracy at Text-to-SQL tasks',
-        'Worked with MIMICSQL dataset, translated to DAIL-SQL format',
-        'Tested execution accuracy for open source LLMs (codellama, deepseek-coder)',
-        'DAIL-SQL is an integrated solution that refreshes the Spider leaderboard with 86.6% accuracy',
+        'Research on Text-to-SQL capabilities of open-source LLMs (e.g. Deepseek Coder) for healthcare applications and patient information retrieval',
+        'Led data collection, preprocessing and GenAI evaluation using the MIMIC database',
+        'Improved execution and exact matching accuracy by 25% via prompt engineering, with Python, Llama and JavaScript for question generation and formatting',
+        'Enhanced code readability and documentation for reproducibility',
+        'Worked with MIMICSQL dataset, translated to DAIL-SQL format; DAIL-SQL refreshes the Spider leaderboard with 86.6% accuracy',
       ],
     },
   ];
