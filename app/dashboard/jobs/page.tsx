@@ -77,11 +77,11 @@ export default function Page() {
 
             <div>
               <h3 className="text-lg font-semibold text-pitch-black mb-4">Key Learnings & Responsibilities:</h3>
-              <ul className="space-y-2">
+              <ul className="list-none pl-0 space-y-2">
                 {job.details.map((detail, idx) => (
-                  <li key={idx} className="flex items-start gap-3 text-grey">
-                    <span className="text-pale-oak mt-1.5">•</span>
-                    <span className="flex-1">{detail}</span>
+                  <li key={idx} className="flex gap-3 text-grey">
+                    <span className="text-pale-oak flex-shrink-0 w-[1em] text-center">•</span>
+                    <span className="leading-relaxed">{detail}</span>
                   </li>
                 ))}
               </ul>
