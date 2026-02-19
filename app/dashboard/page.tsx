@@ -7,6 +7,7 @@ import {
   DocumentDuplicateIcon,
   UserGroupIcon,
   AcademicCapIcon,
+  LightBulbIcon,
   ArrowTopRightOnSquareIcon,
 } from '@heroicons/react/24/outline';
 import { lusitana } from '@/app/ui/fonts';
@@ -16,6 +17,7 @@ const quickLinks = [
   { name: 'Jobs', href: '/dashboard/jobs', icon: BriefcaseIcon, description: 'Opportunities' },
   { name: 'Experiences', href: '/dashboard/experiences', icon: UserGroupIcon, description: "Where I've been" },
   { name: 'Skills', href: '/dashboard/skills', icon: AcademicCapIcon, description: 'What I work with' },
+  { name: 'AYNTK', href: '/dashboard/ayntk', icon: LightBulbIcon, description: 'All you need to know' },
 ];
 
 const contactLinks = [
