@@ -1,5 +1,6 @@
 import Image from 'next/image';
-import { UserGroupIcon } from '@heroicons/react/24/outline';
+import Link from 'next/link';
+import { UserGroupIcon, LinkIcon } from '@heroicons/react/24/outline';
 import { lusitana } from '@/app/ui/fonts';
 
 export default function Page() {
@@ -112,22 +113,55 @@ export default function Page() {
           Hackathons
         </h2>
 
-        <div className="rounded-2xl bg-platinum border border-grey/20 p-8 hover:shadow-lg transition-all">
-          <h3 className="text-2xl font-semibold text-pitch-black mb-6">MiT Hackathon 2025</h3>
+        <div className="space-y-8">
+          {/* HackMIT 2025 - Lexipic */}
+          <div className="rounded-2xl bg-platinum border border-grey/20 p-8 hover:shadow-lg transition-all">
+            <h3 className="text-2xl font-semibold text-pitch-black mb-4">HackMIT 2025</h3>
+            <p className="text-lg text-grey leading-relaxed mb-4">
+              Built <span className="font-semibold text-pitch-black">Lexipic</span> — a mobile language-learning app that uses the camera to recognize objects in real time and quiz you on their names in the language you&apos;re learning. Built with Expo and React Native.
+            </p>
+            <Link
+              href="/dashboard/projects"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-graphite text-platinum hover:bg-pitch-black transition-all text-sm font-medium"
+            >
+              <LinkIcon className="h-5 w-5" />
+              View full project details
+            </Link>
+          </div>
+
+          {/* HackPrinceton Spring 2025 - VibeEase */}
+          <div className="rounded-2xl bg-platinum border border-grey/20 p-8 hover:shadow-lg transition-all">
+            <h3 className="text-2xl font-semibold text-pitch-black mb-4">HackPrinceton Spring 2025</h3>
+            <p className="text-lg text-grey leading-relaxed mb-4">
+              Built <span className="font-semibold text-pitch-black">VibeEase</span> — a mobile app prototype for real-time conversation pairing to enable efficient, in-depth and instant social connection. Used Knot and Google&apos;s Gemini API; first time working with Expo, React Native and mobile frontend.
+            </p>
+            <a
+              href="https://devpost.com/software/vibeease"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-graphite text-platinum hover:bg-pitch-black transition-all text-sm font-medium"
+            >
+              <LinkIcon className="h-5 w-5" />
+              View on Devpost
+            </a>
+          </div>
+
+          {/* NinjaVan Code Dojo 2023 */}
+          <div className="rounded-2xl bg-platinum border border-grey/20 p-8 hover:shadow-lg transition-all">
+            <h3 className="text-2xl font-semibold text-pitch-black mb-6">NinjaVan Code Dojo Hackathon 2023</h3>
           <div className="mb-6">
             <Image
               src="/codedojo-dashboard.jpeg"
               width={1280}
               height={729}
               className="rounded-xl border border-grey/20 shadow-md w-full h-auto"
-              alt="Screenshots of hackathon dashboard"
+              alt="NinjaVan Code Dojo hackathon dashboard"
             />
           </div>
           <p className="text-lg text-grey leading-relaxed">
-            My team and I participated in the MiT Hackathon, where we were tasked to come up with a solution
-            to improve operations over 36 hours. Our team decided to focus on their newest venture into
-            livestream sales, and designed an improved version of their web application and dashboard.
+            My team and I participated in the NinjaVan Code Dojo hackathon, where we were tasked to come up with a solution to improve operations over 36 hours. We focused on their venture into livestream sales and designed an improved version of their web application and dashboard.
           </p>
+        </div>
         </div>
       </div>
     </div>
