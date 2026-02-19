@@ -1,5 +1,5 @@
 import BannerLogo from '@/app/ui/banner-logo';
-import { ArrowRightIcon, BriefcaseIcon, DocumentDuplicateIcon, UserGroupIcon, AcademicCapIcon, StarIcon } from '@heroicons/react/24/outline';
+import { ArrowRightIcon, BriefcaseIcon, DocumentDuplicateIcon, UserGroupIcon, AcademicCapIcon, StarIcon, LightBulbIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import { lusitana } from '@/app/ui/fonts';
 import Image from 'next/image';
@@ -91,12 +91,12 @@ export default function Page() {
       </section>
 
       {/* Projects Section */}
-      <section className="py-20 px-6 bg-white">
+      <section className="py-20 px-6 bg-platinum">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row items-start gap-12">
             <div className="flex-1 md:sticky md:top-20">
-              <div className="inline-flex items-center justify-center w-16 h-16 rounded-xl bg-graphite mb-6">
-                <DocumentDuplicateIcon className="h-8 w-8 text-platinum" />
+              <div className="inline-flex items-center justify-center w-16 h-16 rounded-xl bg-pale-oak mb-6">
+                <DocumentDuplicateIcon className="h-8 w-8 text-graphite" />
               </div>
               <h2 className={`${lusitana.className} text-4xl md:text-5xl font-bold text-pitch-black mb-4`}>
                 Projects
@@ -106,7 +106,7 @@ export default function Page() {
               </p>
               <Link
                 href="/dashboard/projects"
-                className="group inline-flex items-center gap-2 rounded-full bg-graphite px-8 py-4 text-lg font-semibold text-platinum transition-all hover:bg-pitch-black hover:scale-105 hover:shadow-xl"
+                className="group inline-flex items-center gap-2 rounded-full bg-pale-oak px-8 py-4 text-lg font-semibold text-graphite transition-all hover:bg-pale-oak/90 hover:scale-105 hover:shadow-xl"
               >
                 <span>View All Projects</span>
                 <ArrowRightIcon className="w-5 h-5 transition-transform group-hover:translate-x-1" />
@@ -122,7 +122,7 @@ export default function Page() {
       </section>
 
       {/* Jobs Section */}
-      <section className="py-20 px-6 bg-platinum">
+      <section className="py-20 px-6 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col-reverse md:flex-row items-center gap-12">
             <div className="flex-1">
@@ -134,8 +134,8 @@ export default function Page() {
               </div>
             </div>
             <div className="flex-1">
-              <div className="inline-flex items-center justify-center w-16 h-16 rounded-xl bg-pale-oak mb-6">
-                <BriefcaseIcon className="h-8 w-8 text-graphite" />
+              <div className="inline-flex items-center justify-center w-16 h-16 rounded-xl bg-graphite mb-6">
+                <BriefcaseIcon className="h-8 w-8 text-platinum" />
               </div>
               <h2 className={`${lusitana.className} text-4xl md:text-5xl font-bold text-pitch-black mb-4`}>
                 Jobs & Internships
@@ -150,7 +150,7 @@ export default function Page() {
               </p>
               <Link
                 href="/dashboard/jobs"
-                className="group inline-flex items-center gap-2 rounded-full bg-pale-oak px-8 py-4 text-lg font-semibold text-graphite transition-all hover:bg-pale-oak/90 hover:scale-105 hover:shadow-xl"
+                className="group inline-flex items-center gap-2 rounded-full bg-graphite px-8 py-4 text-lg font-semibold text-platinum transition-all hover:bg-pitch-black hover:scale-105 hover:shadow-xl"
               >
                 <span>View Work History</span>
                 <ArrowRightIcon className="w-5 h-5 transition-transform group-hover:translate-x-1" />
@@ -161,12 +161,12 @@ export default function Page() {
       </section>
 
       {/* Experiences Section */}
-      <section className="py-20 px-6 bg-white">
+      <section className="py-20 px-6 bg-platinum">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="flex-1">
-              <div className="inline-flex items-center justify-center w-16 h-16 rounded-xl bg-graphite mb-6">
-                <UserGroupIcon className="h-8 w-8 text-platinum" />
+              <div className="inline-flex items-center justify-center w-16 h-16 rounded-xl bg-pale-oak mb-6">
+                <UserGroupIcon className="h-8 w-8 text-graphite" />
               </div>
               <h2 className={`${lusitana.className} text-4xl md:text-5xl font-bold text-pitch-black mb-4`}>
                 Experiences
@@ -176,7 +176,7 @@ export default function Page() {
               </p>
               <Link
                 href="/dashboard/experiences"
-                className="group inline-flex items-center gap-2 rounded-full bg-graphite px-8 py-4 text-lg font-semibold text-platinum transition-all hover:bg-pitch-black hover:scale-105 hover:shadow-xl"
+                className="group inline-flex items-center gap-2 rounded-full bg-pale-oak px-8 py-4 text-lg font-semibold text-graphite transition-all hover:bg-pale-oak/90 hover:scale-105 hover:shadow-xl"
               >
                 <span>View All Experiences</span>
                 <ArrowRightIcon className="w-5 h-5 transition-transform group-hover:translate-x-1" />
@@ -206,12 +206,12 @@ export default function Page() {
       </section>
 
       {/* Skills Section */}
-      <section className="py-20 px-6 bg-platinum">
+      <section className="py-20 px-6 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row-reverse items-center gap-12">
             <div className="flex-1">
-              <div className="inline-flex items-center justify-center w-16 h-16 rounded-xl bg-pale-oak mb-6">
-                <AcademicCapIcon className="h-8 w-8 text-graphite" />
+              <div className="inline-flex items-center justify-center w-16 h-16 rounded-xl bg-graphite mb-6">
+                <AcademicCapIcon className="h-8 w-8 text-platinum" />
               </div>
               <h2 className={`${lusitana.className} text-4xl md:text-5xl font-bold text-pitch-black mb-4`}>
                 Skills & Education
@@ -219,27 +219,74 @@ export default function Page() {
               <p className="text-xl text-grey mb-6">
                 Technical skills, languages, and courses I&apos;ve taken throughout my computer science journey.
               </p>
-              <p className="text-xl text-grey mb-6">
-                (WIP) Follow me as I collate the best learning resources to get up to speed in an ever-changing industry.
-              </p>
               <Link
                 href="/dashboard/skills"
-                className="group inline-flex items-center gap-2 rounded-full bg-pale-oak px-8 py-4 text-lg font-semibold text-graphite transition-all hover:bg-pale-oak/90 hover:scale-105 hover:shadow-xl"
+                className="group inline-flex items-center gap-2 rounded-full bg-graphite px-8 py-4 text-lg font-semibold text-platinum transition-all hover:bg-pitch-black hover:scale-105 hover:shadow-xl"
               >
                 <span>View All Skills</span>
                 <ArrowRightIcon className="w-5 h-5 transition-transform group-hover:translate-x-1" />
               </Link>
             </div>
             <div className="flex-1">
-              <div className="rounded-2xl bg-white p-8 border border-grey/20">
+              <div className="rounded-2xl bg-platinum p-8 border border-grey/20">
                 <p className="text-grey mb-4">Technical Skills</p>
                 <div className="flex flex-wrap gap-2">
                   {['JavaScript', 'React', 'Next.js', 'Python', 'Java', 'PostgreSQL', 'Tailwind'].map((skill) => (
-                    <span key={skill} className="px-4 py-2 bg-platinum rounded-full text-grey text-sm border border-grey/20">
+                    <span key={skill} className="px-4 py-2 bg-white rounded-full text-grey text-sm border border-grey/20">
                       {skill}
                     </span>
                   ))}
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* AYNTK Section */}
+      <section className="py-20 px-6 bg-platinum">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex flex-col md:flex-row items-center gap-12">
+            <div className="flex-1">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="inline-flex items-center justify-center w-16 h-16 rounded-xl bg-pale-oak">
+                  <LightBulbIcon className="h-8 w-8 text-graphite" />
+                </div>
+                <span className="inline-flex items-center rounded-full bg-pale-oak/20 border border-pale-oak/40 px-3 py-1 text-sm font-semibold text-pale-oak">
+                  New
+                </span>
+              </div>
+              <h2 className={`${lusitana.className} text-4xl md:text-5xl font-bold text-pitch-black mb-4`}>
+                All You Need To Know (AYNTK)
+              </h2>
+              <p className="text-xl text-grey mb-6">
+                A growing guide for anyone starting out as a software engineer — from how computers and software work to data structures, interview prep, and different roles in the industry.
+              </p>
+              <Link
+                href="/dashboard/ayntk"
+                className="group inline-flex items-center gap-2 rounded-full bg-pale-oak px-8 py-4 text-lg font-semibold text-graphite transition-all hover:bg-pale-oak/90 hover:scale-105 hover:shadow-xl"
+              >
+                <span>Explore AYNTK</span>
+                <ArrowRightIcon className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+              </Link>
+            </div>
+            <div className="flex-1">
+              <div className="rounded-2xl bg-white p-8 border border-grey/20">
+                <p className="text-grey mb-4">Sections include</p>
+                <ul className="space-y-2 text-grey">
+                  <li className="flex items-start gap-2">
+                    <span className="text-pale-oak mt-1">•</span>
+                    <span>All about the computer, software, hardware &amp; OS</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-pale-oak mt-1">•</span>
+                    <span>Data structures &amp; algorithms, Leetcode &amp; interviews</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-pale-oak mt-1">•</span>
+                    <span>Software engineer roles explained</span>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
