@@ -41,7 +41,7 @@ export default function Page() {
   ];
 
   return (
-    <div className="max-w-5xl mx-auto py-8 px-6">
+    <div className="max-w-6xl mx-auto py-8 px-6">
       <div className="mb-12">
         <div className="inline-flex items-center justify-center w-16 h-16 rounded-xl bg-graphite mb-6">
           <BriefcaseIcon className="h-8 w-8 text-platinum" />
