@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { ChatBubbleLeftRightIcon, ArrowLeftIcon } from '@heroicons/react/24/outline';
 import { lusitana } from '@/app/ui/fonts';
+import FeedbackForm from './feedback-form';
 
 export default function Page() {
   return (
@@ -20,11 +21,11 @@ export default function Page() {
           Feedback
         </h1>
         <p className="text-xl text-grey">
-          Your thoughts help me improve. Share feedback about this portfolio or anything you’d like to see.
+          Your thoughts help me improve. Share feedback about this portfolio or anything you’d like to see (especially for the AYNTK section)!
         </p>
       </div>
       <div className="rounded-2xl bg-platinum border border-grey/20 p-8">
-        <p className="text-grey mb-6">
+        <p className="text-grey mb-8">
           You can reach me via email at{' '}
           <a href="mailto:jaimengjm@gmail.com" className="text-pale-oak font-medium hover:underline">
             jaimengjm@gmail.com
@@ -38,11 +39,9 @@ export default function Page() {
           >
             LinkedIn
           </a>
-          . I’d love to hear from you.
+          . Or send feedback with the form below.
         </p>
-        <p className="text-grey text-sm">
-          A proper feedback form can be added here later (e.g. form submission or Typeform).
-        </p>
+        <FeedbackForm />
       </div>
     </div>
   );
