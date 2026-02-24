@@ -1,6 +1,12 @@
 import '@/app/ui/global.css';
 import { inter } from '@/app/ui/fonts';
 
+export const metadata = {
+  title: 'Ideate, Innovate, Iterate. | Jaime Ng',
+  description:
+    'Ideate, Innovate, Iterate. Welcome to my portfolio. I\'m Jaime Ng, a computer science student and software developer. Find out more.',
+};
+
 export default function RootLayout({
   children,
 }: {
