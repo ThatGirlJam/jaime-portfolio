@@ -24,9 +24,9 @@ export default function FeedbackForm() {
 
   if (state?.success) {
     return (
-      <div className="rounded-xl border border-pale-oak/40 bg-pale-oak/10 p-6 text-center">
-        <p className="text-pitch-black font-medium">Thanks for your feedback!</p>
-        <p className="mt-1 text-sm text-grey">
+      <div className="rounded-xl border border-pale-oak/40 bg-pale-oak/10 p-4 sm:p-6 text-center">
+        <p className="text-pitch-black font-medium text-sm sm:text-base">Thanks for your feedback!</p>
+        <p className="mt-1 text-xs sm:text-sm text-grey">
           I’ll get back to you if you left your email. You can also reach me at{' '}
           <a href="mailto:jaimengjm@gmail.com" className="text-pale-oak font-medium hover:underline">
             jaimengjm@gmail.com
@@ -38,51 +38,51 @@ export default function FeedbackForm() {
   }
 
   return (
-    <form ref={formRef} action={formAction} className="space-y-6">
-      <div className="grid gap-6 sm:grid-cols-2">
-        <div>
+    <form ref={formRef} action={formAction} className="space-y-5 sm:space-y-6">
+      <div className="grid gap-5 sm:gap-6 sm:grid-cols-2">
+        <div className="min-w-0">
           <label htmlFor="feedback-name" className="mb-1.5 block text-sm font-medium text-pitch-black">
             Name <span className="text-grey font-normal">(optional)</span>
           </label>
           <div className="relative">
-            <UserIcon className="pointer-events-none absolute left-3 top-1/2 h-5 w-5 -translate-y-1/2 text-grey" />
+            <UserIcon className="pointer-events-none absolute left-3 top-1/2 h-5 w-5 -translate-y-1/2 text-grey shrink-0" />
             <input
               id="feedback-name"
               type="text"
               name="name"
               maxLength={120}
               placeholder="Your name"
-              className="block w-full rounded-lg border border-grey/30 bg-platinum py-2.5 pl-10 pr-4 text-pitch-black placeholder:text-grey outline-none transition-colors focus:border-pale-oak focus:ring-2 focus:ring-pale-oak/20"
+              className="block w-full min-h-[44px] rounded-lg border border-grey/30 bg-platinum py-2.5 pl-10 pr-4 text-base text-pitch-black placeholder:text-grey outline-none transition-colors focus:border-pale-oak focus:ring-2 focus:ring-pale-oak/20"
               aria-invalid={Boolean(state?.error)}
             />
           </div>
         </div>
-        <div>
+        <div className="min-w-0">
           <label htmlFor="feedback-email" className="mb-1.5 block text-sm font-medium text-pitch-black">
             Email <span className="text-red-500">*</span>
           </label>
           <div className="relative">
-            <EnvelopeIcon className="pointer-events-none absolute left-3 top-1/2 h-5 w-5 -translate-y-1/2 text-grey" />
+            <EnvelopeIcon className="pointer-events-none absolute left-3 top-1/2 h-5 w-5 -translate-y-1/2 text-grey shrink-0" />
             <input
               id="feedback-email"
               type="email"
               name="email"
               required
               placeholder="you@example.com"
-              className="block w-full rounded-lg border border-grey/30 bg-platinum py-2.5 pl-10 pr-4 text-pitch-black placeholder:text-grey outline-none transition-colors focus:border-pale-oak focus:ring-2 focus:ring-pale-oak/20"
+              className="block w-full min-h-[44px] rounded-lg border border-grey/30 bg-platinum py-2.5 pl-10 pr-4 text-base text-pitch-black placeholder:text-grey outline-none transition-colors focus:border-pale-oak focus:ring-2 focus:ring-pale-oak/20"
               aria-invalid={Boolean(state?.error)}
             />
           </div>
         </div>
       </div>
-      <div>
+      <div className="min-w-0">
         <label htmlFor="feedback-category" className="mb-1.5 block text-sm font-medium text-pitch-black">
           Category <span className="text-grey font-normal">(optional)</span>
         </label>
         <select
           id="feedback-category"
           name="category"
-          className="block w-full rounded-lg border border-grey/30 bg-platinum py-2.5 pl-4 pr-10 text-pitch-black outline-none transition-colors focus:border-pale-oak focus:ring-2 focus:ring-pale-oak/20"
+          className="block w-full min-h-[44px] rounded-lg border border-grey/30 bg-platinum py-2.5 pl-4 pr-10 text-base text-pitch-black outline-none transition-colors focus:border-pale-oak focus:ring-2 focus:ring-pale-oak/20"
         >
           <option value="general">General</option>
           <option value="suggestion">Suggestion</option>
@@ -90,12 +90,12 @@ export default function FeedbackForm() {
           <option value="other">Other</option>
         </select>
       </div>
-      <div>
+      <div className="min-w-0">
         <label htmlFor="feedback-message" className="mb-1.5 block text-sm font-medium text-pitch-black">
           Message <span className="text-red-500">*</span>
         </label>
         <div className="relative">
-          <ChatBubbleBottomCenterTextIcon className="pointer-events-none absolute left-3 top-3 h-5 w-5 text-grey" />
+          <ChatBubbleBottomCenterTextIcon className="pointer-events-none absolute left-3 top-3 h-5 w-5 text-grey shrink-0" />
           <textarea
             id="feedback-message"
             name="message"
@@ -104,7 +104,7 @@ export default function FeedbackForm() {
             minLength={10}
             maxLength={5000}
             placeholder="Share your thoughts, report a bug, or suggest an improvement..."
-            className="block w-full rounded-lg border border-grey/30 bg-platinum py-2.5 pl-10 pr-4 text-pitch-black placeholder:text-grey outline-none transition-colors focus:border-pale-oak focus:ring-2 focus:ring-pale-oak/20 resize-y"
+            className="block w-full min-h-[120px] rounded-lg border border-grey/30 bg-platinum py-2.5 pl-10 pr-4 text-base text-pitch-black placeholder:text-grey outline-none transition-colors focus:border-pale-oak focus:ring-2 focus:ring-pale-oak/20 resize-y"
             aria-invalid={Boolean(state?.error)}
           />
         </div>
@@ -117,7 +117,7 @@ export default function FeedbackForm() {
       )}
       <Button
         type="submit"
-        className="w-full rounded-lg bg-graphite px-4 py-2.5 text-platinum hover:bg-pitch-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-graphite sm:w-auto"
+        className="w-full min-h-[44px] rounded-lg bg-graphite px-4 py-3 sm:py-2.5 text-platinum hover:bg-pitch-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-graphite sm:w-auto touch-manipulation"
       >
         Send feedback
       </Button>
