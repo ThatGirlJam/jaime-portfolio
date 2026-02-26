@@ -105,7 +105,7 @@ export default function Carousel({
       style={{ touchAction: 'pan-y' }}
     >
       <div
-        className="flex items-stretch transition-transform duration-300 ease-out"
+        className="flex items-stretch transition-[transform] duration-400 ease-[cubic-bezier(0.25,0.1,0.25,1)]"
         style={{
           transform: `translateX(calc(-${currentIndex * 100}% + ${dragOffset}px))`,
           transitionProperty: isDragging ? 'none' : 'transform',

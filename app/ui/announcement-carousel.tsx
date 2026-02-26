@@ -43,9 +43,9 @@ export default function AnnouncementCarousel({
       <Link
         key={announcement.id}
         href={announcement.href}
-        className="group flex flex-1 min-h-0 min-w-0 flex-col relative bg-graphite rounded-2xl focus:outline-none focus:ring-2 focus:ring-pale-oak/50 focus:ring-offset-2 focus:ring-offset-graphite w-full"
+        className="group flex flex-1 min-h-0 min-w-0 flex-col relative bg-graphite focus:outline-none focus:ring-2 focus:ring-pale-oak/50 focus:ring-offset-2 focus:ring-offset-graphite w-full"
       >
-        <div className="absolute inset-0 bg-gradient-to-br from-pale-oak/10 to-transparent pointer-events-none rounded-2xl" aria-hidden />
+        <div className="absolute inset-0 bg-gradient-to-br from-pale-oak/10 to-transparent pointer-events-none" aria-hidden />
         <div className="relative z-10 p-4 sm:p-6 md:p-8 flex flex-1 flex-col min-h-0 min-w-0">
           {Icon && (
             <div className="inline-flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-pale-oak/20 text-pale-oak mb-3 sm:mb-4 flex-shrink-0">
