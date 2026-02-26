@@ -1,6 +1,12 @@
 import '@/app/ui/global.css';
 import { inter } from '@/app/ui/fonts';
 
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+};
+
 export const metadata = {
   title: 'Ideate, Innovate, Iterate. | Jaime Ng',
   description:

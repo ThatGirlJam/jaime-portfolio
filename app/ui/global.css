@@ -53,9 +53,14 @@ input[type='number']::-webkit-outer-spin-button {
   animation-delay: 400ms;
 }
 
-/* Smooth scrolling */
+/* Smooth scrolling and prevent horizontal overflow on mobile */
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 /* Custom scrollbar */

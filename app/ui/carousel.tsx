@@ -105,14 +105,14 @@ export default function Carousel({
       style={{ touchAction: 'pan-y' }}
     >
       <div
-        className="flex transition-transform duration-300 ease-out"
+        className="flex items-stretch transition-transform duration-300 ease-out"
         style={{
           transform: `translateX(calc(-${currentIndex * 100}% + ${dragOffset}px))`,
           transitionProperty: isDragging ? 'none' : 'transform',
         }}
       >
         {items.map((item, index) => (
-          <div key={index} className="min-w-full flex-shrink-0">
+          <div key={index} className="min-w-full w-full flex-shrink-0 box-border flex flex-col min-h-0">
             {item}
           </div>
         ))}
@@ -128,10 +128,10 @@ export default function Carousel({
                   e.stopPropagation();
                   goToPrevious();
                 }}
-                className="absolute left-4 top-1/2 -translate-y-1/2 z-10 rounded-full bg-white/80 p-2 shadow-lg backdrop-blur-sm transition-all hover:bg-white hover:scale-110"
+                className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 z-10 rounded-full bg-white/80 p-2.5 sm:p-2 min-w-[44px] min-h-[44px] flex items-center justify-center shadow-lg backdrop-blur-sm transition-all hover:bg-white hover:scale-110 touch-manipulation"
                 aria-label="Previous slide"
               >
-                <ChevronLeftIcon className="h-6 w-6 text-gray-800" />
+                <ChevronLeftIcon className="h-5 w-5 sm:h-6 sm:w-6 text-gray-800" />
               </button>
               <button
                 type="button"
@@ -139,10 +139,10 @@ export default function Carousel({
                   e.stopPropagation();
                   goToNext();
                 }}
-                className="absolute right-4 top-1/2 -translate-y-1/2 z-10 rounded-full bg-white/80 p-2 shadow-lg backdrop-blur-sm transition-all hover:bg-white hover:scale-110"
+                className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 z-10 rounded-full bg-white/80 p-2.5 sm:p-2 min-w-[44px] min-h-[44px] flex items-center justify-center shadow-lg backdrop-blur-sm transition-all hover:bg-white hover:scale-110 touch-manipulation"
                 aria-label="Next slide"
               >
-                <ChevronRightIcon className="h-6 w-6 text-gray-800" />
+                <ChevronRightIcon className="h-5 w-5 sm:h-6 sm:w-6 text-gray-800" />
               </button>
             </>
           )}
@@ -172,7 +172,7 @@ export default function Carousel({
       )}
 
       {showIndicators && items.length > 1 && (
-        <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-2 z-10 pointer-events-auto">
+        <div className="absolute bottom-3 sm:bottom-4 left-1/2 flex -translate-x-1/2 gap-2 z-10 pointer-events-auto">
           {items.map((_, index) => (
             <button
               key={index}
@@ -181,7 +181,7 @@ export default function Carousel({
                 e.stopPropagation();
                 goToSlide(index);
               }}
-              className={`h-2 rounded-full transition-all ${
+              className={`h-2 rounded-full transition-all min-w-[8px] min-h-[8px] touch-manipulation ${
                 index === currentIndex
                   ? 'w-8 bg-white'
                   : 'w-2 bg-white/50 hover:bg-white/75'
