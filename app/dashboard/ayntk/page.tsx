@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import {
   LightBulbIcon,
   CpuChipIcon,
@@ -15,6 +16,7 @@ const sections = [
     href: '/dashboard/ayntk/computer',
     icon: CpuChipIcon,
     description: 'What a computer is, how it works, and why it matters.',
+    available: true,
   },
   {
     title: 'All About Software',
@@ -63,10 +65,37 @@ export default function Page() {
         </p>
       </div>
 
-      {/* Two columns of cards - disabled / in progress */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         {sections.map((section) => {
           const Icon = section.icon;
+          const isAvailable = 'available' in section && section.available === true;
+
+          if (isAvailable) {
+            return (
+              <Link
+                key={section.href}
+                href={section.href}
+                className="group relative flex flex-col rounded-2xl bg-platinum border-2 border-graphite/40 p-6 sm:p-8 hover:border-graphite hover:bg-platinum/90 transition-all focus:outline-none focus:ring-2 focus:ring-graphite focus:ring-offset-2 shadow-sm hover:shadow-md"
+              >
+                <span className="absolute top-4 right-4 rounded-full bg-graphite text-platinum text-xs font-semibold px-2.5 py-1">
+                  Available
+                </span>
+                <div className="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-graphite text-platinum mb-5 group-hover:bg-graphite/90 transition-colors">
+                  <Icon className="h-7 w-7" />
+                </div>
+                <h2 className={`${lusitana.className} text-xl md:text-2xl font-bold text-pitch-black mb-2`}>
+                  {section.title}
+                </h2>
+                <p className="text-grey text-sm md:text-base mt-auto">
+                  {section.description}
+                </p>
+                <span className="mt-3 inline-flex items-center gap-1 text-graphite text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity">
+                  View section →
+                </span>
+              </Link>
+            );
+          }
+
           return (
             <div
               key={section.href}
