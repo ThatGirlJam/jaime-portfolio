@@ -20,7 +20,7 @@ export default function Page() {
         <h1 className={`${lusitana.className} text-3xl sm:text-4xl md:text-5xl font-bold text-pitch-black mb-3 sm:mb-4`}>
           Feedback
         </h1>
-        <p className="text-base sm:text-lg md:text-xl text-grey max-w-xl">
+        <p className="text-base sm:text-lg md:text-xl text-grey">
           Your thoughts help me improve. Share feedback about this portfolio or anything you’d like to see (especially for the AYNTK section)!
         </p>
       </div>
