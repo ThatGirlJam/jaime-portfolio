@@ -66,17 +66,17 @@ export function LayersDiagram() {
             <button
               type="button"
               onClick={() => setOpenId(isOpen ? null : layer.id)}
-              className={`flex w-full items-center gap-4 px-4 py-3 text-left ${layer.className}`}
+              className={`flex w-full items-start sm:items-center gap-2 sm:gap-4 px-3 sm:px-4 py-2.5 sm:py-3 text-left ${layer.className}`}
               aria-expanded={isOpen}
               aria-controls={`layer-drawer-${layer.id}`}
               id={`layer-trigger-${layer.id}`}
             >
-              <span className="text-grey/70 text-sm font-mono w-5 flex-shrink-0">{layer.number}</span>
+              <span className="text-grey/70 text-xs sm:text-sm font-mono w-4 sm:w-5 flex-shrink-0 pt-0.5 sm:pt-0">{layer.number}</span>
               <div className="flex-1 min-w-0">
-                <span className={`font-semibold text-pitch-black ${isOpen ? 'underline decoration-graphite/50' : ''}`}>
+                <span className={`font-semibold text-pitch-black text-sm sm:text-base ${isOpen ? 'underline decoration-graphite/50' : ''}`}>
                   {layer.name}
                 </span>
-                <span className="text-grey text-sm ml-2">{layer.summaryJsx}</span>
+                <span className="text-grey text-xs sm:text-sm ml-1 sm:ml-2 block sm:inline mt-0.5 sm:mt-0">{layer.summaryJsx}</span>
               </div>
             </button>
             <div
@@ -87,7 +87,7 @@ export function LayersDiagram() {
               style={{ gridTemplateRows: isOpen ? '1fr' : '0fr' }}
             >
               <div className="min-h-0 overflow-hidden">
-                <div className="border-t border-grey/20 bg-graphite/5 px-4 py-3 pl-12 text-sm text-grey leading-relaxed">
+                <div className="border-t border-grey/20 bg-graphite/5 px-3 py-2.5 sm:px-4 sm:py-3 pl-8 sm:pl-12 text-xs sm:text-sm text-grey leading-relaxed">
                   {layer.definition}
                 </div>
               </div>
