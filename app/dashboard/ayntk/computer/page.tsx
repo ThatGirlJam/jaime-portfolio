@@ -98,7 +98,7 @@ export default function Page() {
               A short history
             </h2>
             <p className="text-grey leading-relaxed mb-6">
-              From room-sized machines to the device in your pocket. It's the same idea (input, process, output), just ever smaller and more connected.
+              From room-sized machines to the device in your pocket. It&apos;s the same idea (input, process, output), just ever smaller and more connected.
             </p>
             <ul className="relative flex flex-col gap-6 border-l-2 border-graphite/30 pl-6">
               <li className="relative pl-1">
@@ -128,7 +128,7 @@ export default function Page() {
               </li>
             </ul>
             <p className="mt-6 text-grey leading-relaxed">
-              <strong className="text-pitch-black">What's next? :</strong> AI is already in your phone, your search, and your IDE. It's suggesting code, answering questions, and helping you ship faster — this is just the start. The same machine you’re learning about is the one powering the next wave of tools and products. What you build on it can shape how people work and live.
+              <strong className="text-pitch-black">What&apos;s next?</strong> AI is already in your phone, your search, and your IDE—suggesting code, answering questions, and helping you ship faster. That&apos;s just the start. The same machine you&apos;re learning about is the one powering the next wave of tools and products. What you build on it can shape how people work and live.
             </p>
           </section>
 
