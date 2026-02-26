@@ -80,3 +80,12 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #D9C5B2; /* pale oak */
 }
+
+/* Hide scrollbar while keeping scroll behavior (e.g. mobile nav) */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
