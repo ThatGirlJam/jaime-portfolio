@@ -97,15 +97,38 @@ export default function Page() {
             <h2 className={`${lusitana.className} text-2xl font-bold text-pitch-black mb-4`}>
               A short history
             </h2>
-            <p className="text-grey leading-relaxed mb-4">
-              Early mechanical and electromechanical machines (e.g. Babbage’s difference engine, Turing’s Bombe) laid
-              the groundwork. The first general-purpose electronic computers (ENIAC, 1940s) used vacuum tubes; later,
-              transistors and integrated circuits made machines smaller, cheaper, and faster.
+            <p className="text-grey leading-relaxed mb-6">
+              From room-sized machines to the device in your pocket. It's the same idea (input, process, output), just ever smaller and more connected.
             </p>
-            <p className="text-grey leading-relaxed mb-4">
-              The personal computer revolution (1970s–80s), the internet, and mobile devices turned computing into
-              something we use every day. Today we rely on clouds of servers, GPUs for AI, and billions of connected
-              devices—all still following the same basic idea: input, process, output.
+            <ul className="relative flex flex-col gap-6 border-l-2 border-graphite/30 pl-6">
+              <li className="relative pl-1">
+                <span className="absolute -left-[1.875rem] top-0 flex h-3 w-3 items-center justify-center rounded-full bg-graphite ring-4 ring-platinum" aria-hidden  />
+                <span className="text-sm font-semibold text-graphite">1800s–1940s</span>
+                <p className="mt-0.5 mb-0 text-grey leading-relaxed">Mechanical and electromechanical machines (Babbage, Turing’s Bombe). First electronic general-purpose computer: ENIAC, with vacuum tubes.</p>
+              </li>
+              <li className="relative pl-1">
+                <span className="absolute -left-[1.875rem] top-0 flex h-3 w-3 items-center justify-center rounded-full bg-graphite ring-4 ring-platinum" aria-hidden  />
+                <span className="text-sm font-semibold text-graphite">1950s–60s</span>
+                <p className="mt-0.5 mb-0 text-grey leading-relaxed">Transistors and integrated circuits replace vacuum tubes. Machines get smaller, faster, and cheaper; mainframes and minicomputers spread through industry and research.</p>
+              </li>
+              <li className="relative pl-1">
+                <span className="absolute -left-[1.875rem] top-0 flex h-3 w-3 items-center justify-center rounded-full bg-graphite ring-4 ring-platinum" aria-hidden  />
+                <span className="text-sm font-semibold text-graphite">1970s–80s</span>
+                <p className="mt-0.5 mb-0 text-grey leading-relaxed">Microprocessors and the personal computer. Computing moves from labs and offices into homes; the desktop becomes a standard tool for work and play.</p>
+              </li>
+              <li className="relative pl-1">
+                <span className="absolute -left-[1.875rem] top-0 flex h-3 w-3 items-center justify-center rounded-full bg-graphite ring-4 ring-platinum" aria-hidden  />
+                <span className="text-sm font-semibold text-graphite">1990s–2000s</span>
+                <p className="mt-0.5 mb-0 text-grey leading-relaxed">The internet and the web; then mobile and smartphones. Computers become the network — always on, always connected, and part of daily life.</p>
+              </li>
+              <li className="relative pl-1">
+                <span className="absolute -left-[1.875rem] top-0 flex h-3 w-3 items-center justify-center rounded-full bg-graphite ring-4 ring-platinum" aria-hidden  />
+                <span className="text-sm font-semibold text-graphite">Today</span>
+                <p className="mt-0.5 mb-0 text-grey leading-relaxed">Cloud, GPUs for AI, and billions of connected devices. The same layers (application → runtime → OS → hardware) run everything you build, from a script on your laptop to services at global scale.</p>
+              </li>
+            </ul>
+            <p className="mt-6 text-grey leading-relaxed">
+              <strong className="text-pitch-black">What's next? :</strong> AI is already in your phone, your search, and your IDE. It's suggesting code, answering questions, and helping you ship faster — this is just the start. The same machine you’re learning about is the one powering the next wave of tools and products. What you build on it can shape how people work and live.
             </p>
           </section>
 
@@ -130,7 +153,7 @@ export default function Page() {
               </li>
               <li>
                 <strong className="text-pitch-black">Career clarity:</strong> Whether you work on frontend, backend,
-                infra, or embedded systems, the machine is the thing that runs your code—understanding it gives you
+                infra, or embedded systems, the machine is the thing that runs your code — understanding it gives you
                 a shared foundation with the rest of the industry.
               </li>
             </ul>
